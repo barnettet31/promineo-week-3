@@ -5,7 +5,6 @@ const subtractFirstFromLast = function(array){
     //takes in an array and then returns the first number in the array from the last number in the array 
 }
 console.log(subtractFirstFromLast(ages));
-//TODO add new age to the end of ages 
 ages.push(105);
 
 console.log(ages);
