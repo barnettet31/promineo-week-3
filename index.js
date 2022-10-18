@@ -1,20 +1,16 @@
 const ages  = [3, 9, 23, 64, 2, 8, 28, 93];
 
-
-
-//TODO Subtract first element of ages from the last element of ages
 const subtractFirstFromLast = function(array){
     return array[array.length - 1] - array[0]
     //takes in an array and then returns the first number in the array from the last number in the array 
 }
-
 console.log(subtractFirstFromLast(ages));
 //TODO add new age to the end of ages 
 ages.push(105);
 
 console.log(ages);
 console.log(subtractFirstFromLast(ages));
-//TODO repeat first task
+
 
 let totalOfAges = 0; 
 
@@ -45,13 +41,11 @@ const totalOfNameLengths = names.reduce((accumulator, currentValue)=>accumulator
 console.log(totalLengthOfNames);
 
 
-const repeatWords= function (word, n){
-    return word.repeat(n)
-};
+const repeatWords=  (word, n)=>word.repeat(n);
 
-console.log(repeatWords('Hello',3));
+console.log(repeatWords('Hello',3));//prints hello hello hello
 
-const returnFullName = (firstName, lastName)=> `${firstName} + ${lastName}`;
+const returnFullName = (firstName, lastName)=> `${firstName} ${lastName}`;
 
 console.log(returnFullName('Travis', 'Barnette'));
 
