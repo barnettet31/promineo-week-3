@@ -1,7 +1,7 @@
 const ages  = [3, 9, 23, 64, 2, 8, 28, 93];
 
 const subtractFirstFromLast = function(array){
-    return array[array.length - 1] - array[0]
+    return array[array.length - 1] - array[0];
     //takes in an array and then returns the first number in the array from the last number in the array 
 }
 console.log(subtractFirstFromLast(ages));
@@ -33,6 +33,7 @@ console.log('average length of names', averageLengthOfNames);
 //want to use a reduce method on the string (I can do the same as I did above with a placeholder string and using += for each iteration)
 
 const concatenatedStrings = names.reduce((acc, nextEl) =>`${acc} ${nextEl}`,'');
+///names.join(' ');
 console.log('concatenated strings', concatenatedStrings);
 
 const nameLengths = names.map(element=>element.length);
@@ -50,7 +51,7 @@ const returnFullName = (firstName, lastName)=> `${firstName} ${lastName}`;
 
 console.log(returnFullName('Travis', 'Barnette'));
 
-const returnSumOfNumberArray = (array)=>array.reduce((acc, nextEl)=>acc+nextEl) > 100;
+const returnSumOfNumberArray = (array)=>array.reduce((acc, nextEl)=>acc+nextEl,0) > 100;
 console.log('example with sum over 100',returnSumOfNumberArray([102,101,99,98,97])); // should be true
 console.log('example with sum under 100',returnSumOfNumberArray([1,2,3])); //should be false
 
