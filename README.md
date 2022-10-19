@@ -1,0 +1,1 @@
+This is the script that works for the promineo week 3 assignment. 
